@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.time-container{
+
+    background-color: black;
+    position: relative;
+    border: 2px solid lightgreen;
+    width: 300px;
+    height: 500px;
+}
+
+.line{
+    position: absolute;
+    background: red;
+    width: 200px;
+    height: 100px;
+    bottom: 0;
+
+}
+
+.line-1, .line-7{
+
+    clip-path: polygon(0 0, 100% 0, 84% 31%, 16% 31%);
+    left: 48px;
+
+}
+
+.line-1{
+    
+    top: 30px;
+    
+}
+
+.line-2, .line-3, .line-5, .line-6{
+    clip-path: polygon(50% 0,100% 0,85% 100%,10% 100%,0 50%,10% 0);
+    /*clip-path: polygon(0 41%, 100% 41%, 90% 60%, 10% 60%);*/
+    top: 120px;
+    height: 30px;
+
+}
+
+.line-2{
+    right: -45px;
+    transform: rotate(90deg) scaleX(-1);
+
+}
+
+.line-3{
+
+    transform: rotate(90deg) scaleX(-1) scaleY(-1);
+    left: -45px;
+}
+
+.line-4{
+
+    clip-path: polygon(91% 0, 100% 50%, 91% 100%, 9% 100%, 0 50%, 9% 0);
+    top: 220px;
+    height: 40px;
+    width: 160px;
+    left: 68px;
+}
+
+.line-5{
+
+
+    top: 330px;
+    transform: rotate(90deg) scaleX(1) scaleY(-1);
+    left: -45px;
+    
+}
+
+.line-6{
+
+
+    top: 330px;
+    transform: rotate(90deg) scaleX(1);
+    right: -45px;
+    
+}
+
+.line-7{
+    transform: scaleY(-1);
+    bottom: 45px;
+    
+}
+
